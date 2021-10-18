@@ -2,7 +2,7 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
     <url>
-      <loc>/project/Mechanical-Turk-Framework/</loc>
+      <loc>https://jonong1.github.io/project/Mechanical-Turk-Framework/</loc>
       
         <lastmod>2021-04-15T00:00:00-07:00</lastmod>
       
@@ -11,7 +11,7 @@
     </url>
   
     <url>
-      <loc>/project/Googly/</loc>
+      <loc>https://jonong1.github.io/project/Googly/</loc>
       
         <lastmod>2021-01-27T00:00:00-08:00</lastmod>
       
@@ -20,7 +20,7 @@
     </url>
   
     <url>
-      <loc>/project/InfiniMood/</loc>
+      <loc>https://jonong1.github.io/project/InfiniMood/</loc>
       
         <lastmod>2019-11-29T00:00:00-08:00</lastmod>
       
@@ -30,7 +30,7 @@
   
   
     <url>
-      <loc>/about/</loc>
+      <loc>https://jonong1.github.io/about/</loc>
        <lastmod>2017-11-02T00:00:00-07:00</lastmod>
       
        <changefreq>weekly</changefreq>
@@ -40,7 +40,7 @@
      </url>
   
     <url>
-      <loc>/elements/</loc>
+      <loc>https://jonong1.github.io/elements/</loc>
        <lastmod>2017-11-02T00:00:00-07:00</lastmod>
       
        <changefreq>weekly</changefreq>
@@ -50,7 +50,7 @@
      </url>
   
     <url>
-      <loc>/</loc>
+      <loc>https://jonong1.github.io/</loc>
        <lastmod>2017-11-02T00:00:00-07:00</lastmod>
       
        <changefreq>weekly</changefreq>
@@ -60,7 +60,7 @@
      </url>
   
     <url>
-      <loc>/assets/css/main.css</loc>
+      <loc>https://jonong1.github.io/assets/css/main.css</loc>
        <lastmod>2017-11-10T00:20:35+00:00</lastmod>
       
        <changefreq>weekly</changefreq>
@@ -70,7 +70,7 @@
      </url>
   
     <url>
-      <loc>/assets/css/noscript.css</loc>
+      <loc>https://jonong1.github.io/assets/css/noscript.css</loc>
        <lastmod>2017-11-10T00:20:35+00:00</lastmod>
       
        <changefreq>weekly</changefreq>
@@ -80,7 +80,7 @@
      </url>
   
     <url>
-      <loc>/project/</loc>
+      <loc>https://jonong1.github.io/project/</loc>
        <lastmod>2017-11-02T00:00:00-07:00</lastmod>
       
        <changefreq>weekly</changefreq>
@@ -90,7 +90,7 @@
      </url>
   
     <url>
-      <loc>/resume/</loc>
+      <loc>https://jonong1.github.io/resume/</loc>
        <lastmod>2017-11-02T00:00:00-07:00</lastmod>
       
        <changefreq>weekly</changefreq>
@@ -100,7 +100,7 @@
      </url>
   
     <url>
-      <loc>/sitemap.xml</loc>
+      <loc>https://jonong1.github.io/sitemap.xml</loc>
        <lastmod>2017-11-10T00:20:35+00:00</lastmod>
       
        <changefreq>weekly</changefreq>
@@ -110,7 +110,7 @@
      </url>
   
     <url>
-      <loc>/thank-you/</loc>
+      <loc>https://jonong1.github.io/thank-you/</loc>
        <lastmod>2017-11-10T00:20:35+00:00</lastmod>
       
        <changefreq>weekly</changefreq>
@@ -120,7 +120,7 @@
      </url>
   
     <url>
-      <loc>/feed.xml</loc>
+      <loc>https://jonong1.github.io/feed.xml</loc>
        <lastmod>2017-11-10T00:20:35+00:00</lastmod>
       
        <changefreq>weekly</changefreq>
@@ -130,7 +130,7 @@
      </url>
   
     <url>
-      <loc>/feed.xslt.xml</loc>
+      <loc>https://jonong1.github.io/feed.xslt.xml</loc>
        <lastmod>2017-11-10T00:20:35+00:00</lastmod>
       
        <changefreq>weekly</changefreq>

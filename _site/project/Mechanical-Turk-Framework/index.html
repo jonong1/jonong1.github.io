@@ -4,11 +4,11 @@
 	html5up.net | @ajlkn
   Jekyll integration by somiibo.com
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+--><html>
 	<head>
-    <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
 <title>Mechanical Turk Framework</title>
 <meta name="description" content="">
@@ -19,8 +19,8 @@
 <link rel="manifest" href="/assets/icon/site.webmanifest">
 
 <!-- CSS -->
-<link rel="stylesheet" href="/assets/css/main.css" />
-<noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
+<link rel="stylesheet" href="/assets/css/main.css">
+<noscript><link rel="stylesheet" href="/assets/css/noscript.css"></noscript>
 
 	</head>
 	<body class="is-loading">
@@ -63,7 +63,8 @@
       				<p>A new system framework integrated with Amazon Mechanical Turk API.</p>
       			</header>
       			<div class="image main"><img src="/images/mturk/logo.jpeg" alt=""></div>
-      			<p><hr />
+      			<p></p>
+<hr>
 
 <h2 id="overview">Overview</h2>
 <p>Mechanical Turk Framework is a software development project that integrates with <a href="https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/Welcome.html">Amazon Mechanical Turk API</a>. Our goal was to provide our client with a simple yet effective framework for conducting / managing web-based experiments (also known as Human Intelligence Tasks - HITs), specifically around behavioural game theory, plus provide a functional dashboard for all that is required and more. My role was a <strong>Full-Stack Developer / Project Manager</strong>, essentially dealing with both front-end and back-end code.</p>
@@ -81,36 +82,36 @@
 		<li>Consist of Amazon Mechanical Turk workers who are responsible in partaking these HITs (&amp; get paid) </li>
 	</dd>
 </dl>
-<hr />
+<hr>
 
 <h2 id="obstacles">Obstacles</h2>
-<p><span class="image right"><img src="/images//mturk/web.png" alt="" /></span>
+<p><span class="image right"><img src="/images//mturk/web.png" alt=""></span>
 Not only was this a difficult project to finish in 4 months, the time crunch got even smaller as we also needed to implement <em>servers</em> where each server had 2 players playing a normal / extensive form game and have it be submitted to Amazon Mechanical Turk directly. This also meant that our databases had to sync with one another at all times, which made optimizing a crucial factor.</p>
 
 <p>To make matters worse, our team consisted of 6 members in which many did not contribute much and so, we had to work overtime and compensate for the missing progress. In the end, I took leadership and delegated tasks to our team so we could meet the client’s needs and finish on time. The project turned out to be amazing; code was fully scalable (as is the server / games) and most importantly, bug-free.</p>
-<hr />
+<hr>
 
 <h2 id="features">Features</h2>
-<p><span class="image left"><img src="/images//mturk/home.png" alt="" /></span>Upon logging into your account, you are greeted to our Overview Page (shown on the left) where it displays your current available balance (in relation to your account on <a href="https://mturk.com">Amazon MTurk</a>). At the top shows the navigation bar, displaying the Experiments Page, HITTypes Page, HITs Page, Active / Completed Assignments Page, Qualifications Page and Workers Page.</p>
-<p><span class="image right"><img src="/images/mturk/exp.png" alt="" /></span>At the top right displays the current experiment (also called batch) which then filters everything related to that specific batch. The very first step an Admin should do is to either create a new experiment or choose an existing one (nothing is selected initially, meaning no data will be displayed). Additionally, most of the other pages show a very similar concept as this one; a simple table displaying the existing information details, and the choice of adding a new field. Moreover, the Qualifications Page can be altered to become active or inactive with just a click of a button. All of this was structured using our back-end <strong>PostgreSQL</strong> database while synchronously integrating it with Amazon MTurk itself - reducing traffic / load times by <strong>15%</strong>.</p>
+<p><span class="image left"><img src="/images//mturk/home.png" alt=""></span>Upon logging into your account, you are greeted to our Overview Page (shown on the left) where it displays your current available balance (in relation to your account on <a href="https://mturk.com">Amazon MTurk</a>). At the top shows the navigation bar, displaying the Experiments Page, HITTypes Page, HITs Page, Active / Completed Assignments Page, Qualifications Page and Workers Page.</p>
+<p><span class="image right"><img src="/images/mturk/exp.png" alt=""></span>At the top right displays the current experiment (also called batch) which then filters everything related to that specific batch. The very first step an Admin should do is to either create a new experiment or choose an existing one (nothing is selected initially, meaning no data will be displayed). Additionally, most of the other pages show a very similar concept as this one; a simple table displaying the existing information details, and the choice of adding a new field. Moreover, the Qualifications Page can be altered to become active or inactive with just a click of a button. All of this was structured using our back-end <strong>PostgreSQL</strong> database while synchronously integrating it with Amazon MTurk itself - reducing traffic / load times by <strong>15%</strong>.</p>
 
 <p>One of the core features of this whole project that our client requested was to develop servers / lobbies optimized for up to <strong>200</strong> users to play (scalable) normal and extensive form games simultaneously live. Images below show the sequence of how a simple 2-player game of TicTacToe would go about working, starting from our end to Amazons'. (<u><i>Note</i></u>: games are also shown as active assignments).</p>
 <div class="box alt">
 	<div class="row 50% uniform">
-		<div class="4u"><span class="image fit"><img src="/images/mturk/wait.png" alt="" /><figcaption class="caption" style="text-align:center; display:table; max-width:60%; margin: 10px auto;"><sup>Waiting for other party to join</sup></figcaption></span></div>
-		<div class="4u"><span class="image fit"><img src="/images/mturk/game.png" alt="" /><figcaption class="caption" style="text-align:center; display:table; max-width:60%; margin: 10px auto;"><sup>Playing a turn-based game live</sup></figcaption></span></div>
-		<div class="4u$"><span class="image fit"><img src="/images/mturk/gj.png" alt="" /><figcaption class="caption" style="text-align:center; display:table; max-width:60%; margin: 10px auto;"><sup>Submit to Amazon directly</sup></figcaption></span></div>
+		<div class="4u"><span class="image fit"><img src="/images/mturk/wait.png" alt=""><figcaption class="caption" style="text-align:center; display:table; max-width:60%; margin: 10px auto;"><sup>Waiting for other party to join</sup></figcaption></span></div>
+		<div class="4u"><span class="image fit"><img src="/images/mturk/game.png" alt=""><figcaption class="caption" style="text-align:center; display:table; max-width:60%; margin: 10px auto;"><sup>Playing a turn-based game live</sup></figcaption></span></div>
+		<div class="4u$"><span class="image fit"><img src="/images/mturk/gj.png" alt=""><figcaption class="caption" style="text-align:center; display:table; max-width:60%; margin: 10px auto;"><sup>Submit to Amazon directly</sup></figcaption></span></div>
 	</div>
 </div>
-<p><span class="image right"><img src="/images//mturk/completed.png" alt="" /></span>When completed, Admins can then approve / reject submitted assignments, or even pay bonuses to workers in bulk through a pop-up (specifically, using checkboxes on the left-hand side). For better security, we also designed our system so that it wouldn't allow Admins to pay bonuses to non-approved assignments or ones already paid. All in all, our user-friendly interface was designed using <strong>HTML / CSS</strong> that allowed users to manage tasks with ease, improving overall time / efficiency.</p>
-<hr />
+<p><span class="image right"><img src="/images//mturk/completed.png" alt=""></span>When completed, Admins can then approve / reject submitted assignments, or even pay bonuses to workers in bulk through a pop-up (specifically, using checkboxes on the left-hand side). For better security, we also designed our system so that it wouldn't allow Admins to pay bonuses to non-approved assignments or ones already paid. All in all, our user-friendly interface was designed using <strong>HTML / CSS</strong> that allowed users to manage tasks with ease, improving overall time / efficiency.</p>
+<hr>
 
 <h2 id="references">References</h2>
 <ul>
   <li><a href="https://docs.aws.amazon.com/cli/latest/reference/mturk/index.html">https://docs.aws.amazon.com/cli/latest/reference/mturk/index.html</a></li>
   <li><a href="https://channels.readthedocs.io/en/latest/">https://channels.readthedocs.io/en/latest/</a></li>
 </ul>
-</p>
+
       		</section>
 
           <!-- <div class="comments-wrapper">
@@ -153,20 +154,20 @@ Not only was this a difficult project to finish in 4 months, the time crunch got
     <form method="POST" action="https://api.slapform.com/ong.jzh@gmail.com">
       <div class="field">
         <label for="name">Name</label>
-        <input type="text" name="name" id="name" />
+        <input type="text" name="name" id="name">
       </div>
       <div class="field">
         <label for="email">Email</label>
-        <input type="email" name="slap_replyto" id="email" /> <!-- slap_replyto will set the reply-to as the submitter's email! -->
+        <input type="email" name="slap_replyto" id="email"> <!-- slap_replyto will set the reply-to as the submitter's email! -->
       </div>
       <div class="field">
         <label for="message">Message</label>
         <textarea name="message" id="message" rows="3"></textarea>
       </div>
       <ul class="actions">
-        <li><input type="submit" value="Send Message" /></li>
+        <li><input type="submit" value="Send Message"></li>
       </ul>
-      <input type="hidden" name="slap_redirect" value="/thank-you" /> <!-- slap_redirect allows you to set a custom redirect/thank you page -->
+      <input type="hidden" name="slap_redirect" value="https://jonong1.github.io/thank-you"> <!-- slap_redirect allows you to set a custom redirect/thank you page -->
     </form>
   </section>
   <section class="split contact">
@@ -195,7 +196,11 @@ Not only was this a difficult project to finish in 4 months, the time crunch got
 </footer>
 <!-- Copyright -->
 <div id="copyright">
-  <ul><li>Copyright &copy; 2021 Jonathan Ong</li><li>Sponsored by <a href="https://unsplash.com/" rel="nofollow">Unsplash</a></li></ul>
+  <ul>
+<li>Copyright © 2021 Jonathan Ong</li>
+<li>Sponsored by <a href="https://unsplash.com/" rel="nofollow">Unsplash</a>
+</li>
+</ul>
   <!-- <ul><li>Copyright &copy; 2021 Jonathan Ong</li><li>Design by <a href="https://html5up.net" rel="nofollow">HTML5 UP</a></li><li>Jekyll Integration by <a href="https://slapform.com">Slapform</a> </li></ul> -->
 </div>
 
