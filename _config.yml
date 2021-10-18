@@ -3,7 +3,7 @@ title:              Jonathan Ong
 bio:                'Jekyll version of the Massively theme by HTML5UP'
 description:        "Jekyll version of the Massively theme by HTML5UP"
 locale:             en_US
-baseurl: "" # the subpath of your site, e.g. /project
+baseurl: "/jonong1" # the subpath of your site, e.g. /project
 url: "jonong1.github.io" # the base hostname & protocol for your site
 
 # Comments
