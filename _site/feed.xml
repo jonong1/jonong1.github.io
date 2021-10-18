@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.2.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-10-17T23:55:02-07:00</updated><id>/</id><title type="html">Jonathan Ong</title><subtitle>Jekyll version of the Massively theme by HTML5UP</subtitle><entry><title type="html">Mechanical Turk Framework</title><link href="/project/Mechanical-Turk-Framework/" rel="alternate" type="text/html" title="Mechanical Turk Framework" /><published>2021-04-15T00:00:00-07:00</published><updated>2021-04-15T00:00:00-07:00</updated><id>/project/Mechanical-Turk-Framework</id><content type="html" xml:base="/project/Mechanical-Turk-Framework/">&lt;hr /&gt;
+
+&lt;h2 id=&quot;overview&quot;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;Mechanical Turk Framework is a software development project that integrates with &lt;a href=&quot;https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/Welcome.html&quot;&gt;Amazon Mechanical Turk API&lt;/a&gt;. Our goal was to provide our client with a simple yet effective framework for conducting / managing web-based experiments (also known as Human Intelligence Tasks - HITs), specifically around behavioural game theory, plus provide a functional dashboard for all that is required and more. My role was a &lt;strong&gt;Full-Stack Developer / Project Manager&lt;/strong&gt;, essentially dealing with both front-end and back-end code.&lt;/p&gt;
+
+&lt;p&gt;Alternatively, existing software that contains some of the required functionality (i.e., &lt;a href=&quot;https://github.com/TurkServer/long-run-cooperation&quot;&gt;TurkServer&lt;/a&gt;) either didn’t integrate well with Amazon Mechanical Turk, or was built upon a deprecated API. This concluded for our team to meet their needs and propose a system that would provide them with a tool which contains the core functionalities they require, as well as providing them with solid infrastructure that’s secure and scalable in the future.&lt;/p&gt;
+
+&lt;p&gt;Before we dive into some obstacles we had to tackle as a team and some core features of our web application, let us first define a few things. Users of our system falls into 2 main categories:&lt;/p&gt;
+&lt;dl&gt;
+	&lt;dt&gt;Administrators (also called Requesters)&lt;/dt&gt;
+	&lt;dd&gt;
+		&lt;li&gt;Consist of researchers who are responsible for managing the application and creating these HITs&lt;/li&gt;
+	&lt;/dd&gt;
+	&lt;dt&gt;Turkers (also called Workers)&lt;/dt&gt;
+	&lt;dd&gt;
+		&lt;li&gt;Consist of Amazon Mechanical Turk workers who are responsible in partaking these HITs (&amp;amp; get paid) &lt;/li&gt;
+	&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;obstacles&quot;&gt;Obstacles&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&quot;image right&quot;&gt;&lt;img src=&quot;/images//mturk/web.png&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;
+Not only was this a difficult project to finish in 4 months, the time crunch got even smaller as we also needed to implement &lt;em&gt;servers&lt;/em&gt; where each server had 2 players playing a normal / extensive form game and have it be submitted to Amazon Mechanical Turk directly. This also meant that our databases had to sync with one another at all times, which made optimizing a crucial factor.&lt;/p&gt;
+
+&lt;p&gt;To make matters worse, our team consisted of 6 members in which many did not contribute much and so, we had to work overtime and compensate for the missing progress. In the end, I took leadership and delegated tasks to our team so we could meet the client’s needs and finish on time. The project turned out to be amazing; code was fully scalable (as is the server / games) and most importantly, bug-free.&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&quot;image left&quot;&gt;&lt;img src=&quot;/images//mturk/home.png&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;Upon logging into your account, you are greeted to our Overview Page (shown on the left) where it displays your current available balance (in relation to your account on &lt;a href=&quot;https://mturk.com&quot;&gt;Amazon MTurk&lt;/a&gt;). At the top shows the navigation bar, displaying the Experiments Page, HITTypes Page, HITs Page, Active / Completed Assignments Page, Qualifications Page and Workers Page.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;image right&quot;&gt;&lt;img src=&quot;/images/mturk/exp.png&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;At the top right displays the current experiment (also called batch) which then filters everything related to that specific batch. The very first step an Admin should do is to either create a new experiment or choose an existing one (nothing is selected initially, meaning no data will be displayed). Additionally, most of the other pages show a very similar concept as this one; a simple table displaying the existing information details, and the choice of adding a new field. Moreover, the Qualifications Page can be altered to become active or inactive with just a click of a button. All of this was structured using our back-end &lt;strong&gt;PostgreSQL&lt;/strong&gt; database while synchronously integrating it with Amazon MTurk itself - reducing traffic / load times by &lt;strong&gt;15%&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;One of the core features of this whole project that our client requested was to develop servers / lobbies optimized for up to &lt;strong&gt;200&lt;/strong&gt; users to play (scalable) normal and extensive form games simultaneously live. Images below show the sequence of how a simple 2-player game of TicTacToe would go about working, starting from our end to Amazons'. (&lt;u&gt;&lt;i&gt;Note&lt;/i&gt;&lt;/u&gt;: games are also shown as active assignments).&lt;/p&gt;
+&lt;div class=&quot;box alt&quot;&gt;
+	&lt;div class=&quot;row 50% uniform&quot;&gt;
+		&lt;div class=&quot;4u&quot;&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/mturk/wait.png&quot; alt=&quot;&quot; /&gt;&lt;figcaption class=&quot;caption&quot; style=&quot;text-align:center; display:table; max-width:60%; margin: 10px auto;&quot;&gt;&lt;sup&gt;Waiting for other party to join&lt;/sup&gt;&lt;/figcaption&gt;&lt;/span&gt;&lt;/div&gt;
+		&lt;div class=&quot;4u&quot;&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/mturk/game.png&quot; alt=&quot;&quot; /&gt;&lt;figcaption class=&quot;caption&quot; style=&quot;text-align:center; display:table; max-width:60%; margin: 10px auto;&quot;&gt;&lt;sup&gt;Playing a turn-based game live&lt;/sup&gt;&lt;/figcaption&gt;&lt;/span&gt;&lt;/div&gt;
+		&lt;div class=&quot;4u$&quot;&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/mturk/gj.png&quot; alt=&quot;&quot; /&gt;&lt;figcaption class=&quot;caption&quot; style=&quot;text-align:center; display:table; max-width:60%; margin: 10px auto;&quot;&gt;&lt;sup&gt;Submit to Amazon directly&lt;/sup&gt;&lt;/figcaption&gt;&lt;/span&gt;&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;span class=&quot;image right&quot;&gt;&lt;img src=&quot;/images//mturk/completed.png&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;When completed, Admins can then approve / reject submitted assignments, or even pay bonuses to workers in bulk through a pop-up (specifically, using checkboxes on the left-hand side). For better security, we also designed our system so that it wouldn't allow Admins to pay bonuses to non-approved assignments or ones already paid. All in all, our user-friendly interface was designed using &lt;strong&gt;HTML / CSS&lt;/strong&gt; that allowed users to manage tasks with ease, improving overall time / efficiency.&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.aws.amazon.com/cli/latest/reference/mturk/index.html&quot;&gt;https://docs.aws.amazon.com/cli/latest/reference/mturk/index.html&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://channels.readthedocs.io/en/latest/&quot;&gt;https://channels.readthedocs.io/en/latest/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><summary type="html">A new system framework integrated with Amazon Mechanical Turk API.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="/images/mturk/logo.jpeg" /></entry><entry><title type="html">Googly</title><link href="/project/Googly/" rel="alternate" type="text/html" title="Googly" /><published>2021-01-27T00:00:00-08:00</published><updated>2021-01-27T00:00:00-08:00</updated><id>/project/Googly</id><content type="html" xml:base="/project/Googly/">&lt;hr /&gt;
+
+&lt;h2 id=&quot;backstory&quot;&gt;Backstory&lt;/h2&gt;
+&lt;p&gt;English is the one of the most widely spoken languages in the world, and still continuing today! Unfortunately, recent studies from the United Nations have concluded that &lt;strong&gt;617 million&lt;/strong&gt; youth worldwide lack literacy skills, including an astonishing amount of &lt;strong&gt;750 million&lt;/strong&gt; adults remaining illiterate in 2016.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“Anyone who has never made a mistake has never tried anything new.” - Albert Einstein&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;overview&quot;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;Our goal of this project was to thrive on the quality of education and demonstrate how impactful it can be to anyone, especially on young and new learners. We reach this goal by providing a very fun &amp;amp; engaging game, where players learn the English language through clicking / typing activities. Googly also provides sound for the words’ proper pronunciation to build upon a stronger foundation.&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&quot;image left&quot;&gt;&lt;img src=&quot;/images//googly/home.jpg&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;Our web application was built using &lt;strong&gt;React&lt;/strong&gt; and &lt;strong&gt;Node.js&lt;/strong&gt;, again, targeted for ESL learners. The home page consists of a very simple, minimalistic design with a link to our repository. At the top displays our navigation bar, consisting of the Home Page and Game page. Lastly, the bottom of this page shows all our contact information, including all our respective GitHub links.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;image right&quot;&gt;&lt;img src=&quot;/images/googly/game.jpg&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;As stated earlier, we designed an innovative and engaging interface that involves clicking / typing activities with over &lt;strong&gt;300+&lt;/strong&gt; various words. This idea was inspired by the widely popular mobile game, &lt;a href=&quot;https://apps.apple.com/us/app/piano-tiles-2-piano-game/id1027688889&quot;&gt;Piano Tiles 2™ - Piano Game&lt;/a&gt;. Additionally, we implemented additional functionalities such as automated sound pronunciations, speed of word animations for enhanced difficulty, and even confetti animations for every score of 10.&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/JamieJiHeonKim/Googly-Word-Game&quot;&gt;https://github.com/JamieJiHeonKim/Googly-Word-Game&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://sdgs.un.org/&quot;&gt;https://sdgs.un.org/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><summary type="html">An online learning platform that serves to teach English through our immersive game!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="/images/googly/logo.jpg" /></entry><entry><title type="html">InfiniMood</title><link href="/project/InfiniMood/" rel="alternate" type="text/html" title="InfiniMood" /><published>2019-11-29T00:00:00-08:00</published><updated>2019-11-29T00:00:00-08:00</updated><id>/project/InfiniMood</id><content type="html" xml:base="/project/InfiniMood/">&lt;hr /&gt;
+
+&lt;h2 id=&quot;overview&quot;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;InfiniMood was based on the concept of the widely popular social networking service, &lt;a href=&quot;https://twitter.com/&quot;&gt;Twitter&lt;/a&gt;. Essentially, our Android application lets us do most of the features Twitter can do, including logging into your unique account, posting said events, searching / requesting to follow other users, and even customizing your profile as you see fit! The main difference between ours and theirs is that instead of just posting anything, we specifically aimed for the current mood at the moment as we feel that it gives insight on a more personal level.&lt;/p&gt;
+
+&lt;p&gt;Additionally, for those who are familiar with the &lt;a href=&quot;https://map.snapchat.com/&quot;&gt;Snap Map&lt;/a&gt; feature on &lt;a href=&quot;https://www.snapchat.com/&quot;&gt;Snapchat&lt;/a&gt;, we, too, have similarly implemented our own as well. This allows users to check where other people (those of which you’re following) are currently located when posting events, as well as giving pop-ups on their respective posts for further details.&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
+&lt;p&gt;We built this mobile mood tracking application using &lt;strong&gt;Android Studio&lt;/strong&gt; and &lt;strong&gt;Java&lt;/strong&gt;, while also utilizing &lt;strong&gt;Firebase&lt;/strong&gt; to manage / store new and existing user data. As stated above, our real-time live-tracking map system was implemented with &lt;strong&gt;Google API&lt;/strong&gt; for all users to interact with simultaneously.&lt;/p&gt;
+
+&lt;p&gt;Below are some examples of a few prominent features for a more visual representation.&lt;/p&gt;
+&lt;div class=&quot;box alt&quot;&gt;
+		&lt;div class=&quot;row 50% uniform&quot;&gt;
+			&lt;div class=&quot;4u&quot;&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/infinimood/login.png&quot; alt=&quot;&quot; /&gt;&lt;figcaption class=&quot;caption&quot; style=&quot;text-align:center; display:table; max-width:60%; margin: 10px auto;&quot;&gt;&lt;sup&gt;Sign Up / Login&lt;/sup&gt;&lt;/figcaption&gt;&lt;/span&gt;&lt;/div&gt;
+			&lt;div class=&quot;4u&quot;&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/infinimood/add.png&quot; alt=&quot;&quot; /&gt;&lt;figcaption class=&quot;caption&quot; style=&quot;text-align:center; display:table; max-width:60%; margin: 10px auto;&quot;&gt;&lt;sup&gt;Add / Edit Mood Event&lt;/sup&gt;&lt;/figcaption&gt;&lt;/span&gt;&lt;/div&gt;
+			&lt;div class=&quot;4u$&quot;&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/infinimood/history.png&quot; alt=&quot;&quot; /&gt;&lt;figcaption class=&quot;caption&quot; style=&quot;text-align:center; display:table; max-width:60%; margin: 10px auto;&quot;&gt;&lt;sup&gt;View Past History&lt;/sup&gt;&lt;/figcaption&gt;&lt;/span&gt;&lt;/div&gt;
+			&lt;!-- Break --&gt;
+			&lt;div class=&quot;4u&quot;&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/infinimood/follow.png&quot; alt=&quot;&quot; /&gt;&lt;figcaption class=&quot;caption&quot; style=&quot;text-align:center; display:table; max-width:60%; margin: 10px auto;&quot;&gt;&lt;sup&gt;Search / Follow Users&lt;/sup&gt;&lt;/figcaption&gt;&lt;/span&gt;&lt;/div&gt;
+			&lt;div class=&quot;4u&quot;&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/infinimood/map.png&quot; alt=&quot;&quot; /&gt;&lt;figcaption class=&quot;caption&quot; style=&quot;text-align:center; display:table; max-width:60%; margin: 10px auto;&quot;&gt;&lt;sup&gt;Geolocation&lt;/sup&gt;&lt;/figcaption&gt;&lt;/span&gt;&lt;/div&gt;
+			&lt;div class=&quot;4u$&quot;&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/infinimood/profile.png&quot; alt=&quot;&quot; /&gt;&lt;figcaption class=&quot;caption&quot; style=&quot;text-align:center; display:table; max-width:60%; margin: 10px auto;&quot;&gt;&lt;sup&gt;Customize Profile&lt;/sup&gt;&lt;/figcaption&gt;&lt;/span&gt;&lt;/div&gt;
+		&lt;/div&gt;
+&lt;/div&gt;
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/CMPUT301F19T05/InfiniMood&quot;&gt;https://github.com/CMPUT301F19T05/InfiniMood&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><summary type="html">A mobile mood tracking tool on Android, functioning similarly to Twitter.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="/images/infinimood/logo.png" /></entry></feed>
