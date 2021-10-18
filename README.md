@@ -1,7 +1,7 @@
 # jonong1.github.io
 > Designed by HTML5UP and Ruby Jekyll
 
-## How to run
+## Run Locally
 ```
 bundle install	
 bundle exec jekyll serve
