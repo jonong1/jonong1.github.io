@@ -3,8 +3,8 @@ title:              Jonathan Ong
 bio:                ''
 description:        ""
 locale:             en_US
-baseurl: "/jonong1" # the subpath of your site, e.g. /project
-url: "https://jonong1.github.io/" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /project
+url: "https://jonong1.github.io" # the base hostname & protocol for your site
 
 # Comments
 disqus_shortname:   default
