@@ -2,7 +2,7 @@
 title:              Jonathan Ong
 bio:                ''
 description:        ""
-locale:             en_US
+locale:             en_CA
 baseurl: "" # the subpath of your site, e.g. /project
 url: "https://jonong1.github.io" # the base hostname & protocol for your site
 
