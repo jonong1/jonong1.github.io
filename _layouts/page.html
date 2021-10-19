@@ -1,49 +1,37 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-    {% include head.html %}
+    	{% include head.html %}
 	</head>
 	<body class="is-loading">
-
 		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
-
-				<!-- Header -->
-				<header id="header">
-					<a href="{{ "/" | absolute_url }}" class="logo">{{site.title}}</a>
-				</header>
-
-				<!-- Nav -->
-					<nav id="nav">
-
-            {% include nav.html %}
-
-					</nav>
-
-				<!-- Main -->
-				<div id="main">
-
-					<!-- Post -->
-					<section class="post">
-						<p>{{content}}</p>
-					</section>
-
-					<!-- Footer -->
-						<footer>
-              <ul class="actions">
-								<li><a href="{{ "/project/" | absolute_url }}" class="button">My Projects</a></li>
-              </ul>
-						</footer>
-					</div>
-
+		<div id="wrapper" class="fade-in">
+			<!-- Header -->
+			<header id="header">
+				<a href="{{ "/" | absolute_url }}" class="logo">{{site.title}}</a>
+			</header>
+			<!-- Nav -->
+			<nav id="nav">
+            	{% include nav.html %}
+			</nav>
+			<!-- Main -->
+			<div id="main">
+				<!-- Post -->
+				<section class="post">
+					<p>{{content}}</p>
+				</section>
 				<!-- Footer -->
-        {% include foot.html %}
-
+				<footer>
+              		<ul class="actions">
+						<li><a href="{{ "/project/" | absolute_url }}" class="button">My Projects</a></li>
+              		</ul>
+				</footer>
 			</div>
-
-			<!-- Scripts -->
-			{% include scripts-main.html %}
-			{% include tracking.html %}
-
+			<!-- Footer -->
+        	{% include foot.html %}
+		</div>
+		<!-- Scripts -->
+		{% include scripts-main.html %}
+		{% include tracking.html %}
 	</body>
 </html>

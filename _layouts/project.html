@@ -1,75 +1,59 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-    {% include head.html %}
-
+    	{% include head.html %}
 	</head>
 	<body class="is-loading">
-
 		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
-
-				<!-- Header -->
-				<header id="header">
-					<a href="{{ "/" | absolute_url }}" class="logo">{{site.title}}</a>
-				</header>
-
-
-				<!-- Nav -->
-					<nav id="nav">
-
-            {% include nav.html %}
-						
-					</nav>
-
-				<!-- Main -->
-				<div id="main">
-
-          <article class="post featured">
-            <header class="major">
-              <h2>Projects</h2>
-			  <p>"If my mind can conceive it. And my heart can believe it - Then I can achieve it." -Muhammad Ali</p>
-            </header>
-          </article>
-					<!-- Post -->
-					<section class="posts">
-						{% for post in site.posts %}
+		<div id="wrapper" class="fade-in">
+			<!-- Header -->
+			<header id="header">
+				<a href="{{ "/" | absolute_url }}" class="logo">{{site.title}}</a>
+			</header>
+			<!-- Nav -->
+			<nav id="nav">
+            	{% include nav.html %}	
+			</nav>
+			<!-- Main -->
+			<div id="main">
+          		<article class="post featured">
+            		<header class="major">
+              			<h2>Projects</h2>
+			  			<p>"If my mind can conceive it. And my heart can believe it - Then I can achieve it." -Muhammad Ali</p>
+            		</header>
+          		</article>
+				<!-- Post -->
+				<section class="posts">
+					{% for post in site.posts %}
 						{% assign mod3 = forloop.index | modulo: 3 %}
+						<article>
+							<header>
+								<span class="date">{{ post.date | date_to_string }}</span>
+								<h2><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
+							</header>
+							<a href="{{ post.url | absolute_url }}" class="image fit"><img src="{{ post.image | absolute_url }}" alt="" /></a>
+							<p>{{ post.excerpt }}</p>
+							<ul class="actions">
+								<li><a href="{{ post.url | absolute_url }}" class="button">Details</a></li>
+							</ul>
+						</article>
+						{% if mod3 == 0 %}
 							<article>
 								<header>
-									<span class="date">{{ post.date | date_to_string }}</span>
-									<h2><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
+									<span class="date" style="visibility:hidden">2022</span>
+									<h2>More Coming Soon . . .</h2>
 								</header>
-								<a href="{{ post.url | absolute_url }}" class="image fit"><img src="{{ post.image | absolute_url }}" alt="" /></a>
-								<p>{{ post.excerpt }}</p>
-								<ul class="actions">
-									<li><a href="{{ post.url | absolute_url }}" class="button">Details</a></li>
-								</ul>
+								<span class="image fit"><img src="{{ "/images/waiting.gif" | absolute_url }}" alt="" /></span>
 							</article>
-							{% if mod3 == 0 %}
-							<article>
-								<header>
-									<ul class="actions">
-										<h2>More Coming Soon . . .</h2>
-									</ul>
-								</header>
-
-							</article>
-							{% endif %}
-						{% endfor %}
-
-					</section>
-
-					</div>
-
-				<!-- Footer -->
-        {% include foot.html %}
-
+						{% endif %}
+					{% endfor %}
+				</section>
 			</div>
-
-			<!-- Scripts -->
-			{% include scripts-main.html %}
-			{% include tracking.html %}
-
+			<!-- Footer -->
+        	{% include foot.html %}
+		</div>
+		<!-- Scripts -->
+		{% include scripts-main.html %}
+		{% include tracking.html %}
 	</body>
 </html>

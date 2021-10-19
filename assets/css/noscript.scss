@@ -15,7 +15,6 @@
 */
 
 /* Wrapper */
-
 	#wrapper {
 		background-color:		_palette(wrapper-bg);
 		background-image:		url('../../images/overlay.png'),	linear-gradient(0deg, rgba(0,0,0,0.1), rgba(0,0,0,0.1)),	url('{{site.background_image}}');
@@ -32,7 +31,6 @@
 	}
 
 /* Intro */
-
 	#intro {
 		body.is-loading & {
 			opacity: 1;
