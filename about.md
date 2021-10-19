@@ -30,13 +30,15 @@ Keeb is another term for keyboard, primarily used in the mechanical keyboard com
 	<dt>Main Keeb</dt>
 	<dd>
 		<li><strong>Case</strong>: D60 WKL E-White/Black (Gasket Mount)</li>
-		<li><strong>Plate</strong>: FR4 Plate</li>
+		<li><strong>Plate</strong>: FR4</li>
 		<li><strong>PCB</strong>: DZ60RGB-WKL</li>
 		<li><strong>Keycaps</strong>: EPBT 9009 + Gen.S Prism Resin Artisan</li>
 		<li><strong>Switches</strong>: Alpacas Linear (Lubed and Filmed)</li>
 		<li><strong>Stabilizers</strong>: Durock V2</li>
 	</dd>
 </dl>
+
+<br>
 
 ### TV Shows
 <div class="box alt">
