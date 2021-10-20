@@ -39,8 +39,6 @@ Keeb is another term for keyboard, primarily used in the mechanical keyboard com
 	</dd>
 </dl>
 
-<br>
-
 ### TV Shows
 <div class="box alt">
 	<div class="row 50% uniform">
