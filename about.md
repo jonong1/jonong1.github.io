@@ -16,6 +16,7 @@ My name is Jon, and I am finishing up my major in Computing Science with a minor
 
 To my right is a photo of myself when I was young, don't even ask what I'm holding - I really don't know.
 <hr />
+
 ## Hobbies
 To get to know me better, below are just a few hobbies I personally enjoy.
 
@@ -70,8 +71,8 @@ Games have always been a big part of my life, all the way back to my childhood. 
 	</dd>
 </dl>
 
-
 ### Badminton
+
 #### Achievements
 <dl>
 	<dt>2015</dt>

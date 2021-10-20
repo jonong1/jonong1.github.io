@@ -6,6 +6,7 @@ excerpt: "A new system framework integrated with Amazon Mechanical Turk API."
 image: "/images/mturk/logo.jpeg"
 ---
 <hr />
+
 ## Overview
 Mechanical Turk Framework is a software development project that integrates with [Amazon Mechanical Turk API](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/Welcome.html). Our goal was to provide our client with a simple yet effective framework for conducting / managing web-based experiments (also known as Human Intelligence Tasks - HITs), specifically around behavioural game theory, plus provide a functional dashboard for all that is required and more. My role was a **Full-Stack Developer / Project Manager**, essentially dealing with both front-end and back-end code.
 
@@ -23,6 +24,7 @@ Before we dive into some obstacles we had to tackle as a team and some core feat
 	</dd>
 </dl>
 <hr />
+
 ## Obstacles
 <span class="image right"><img src="{{ "/images//mturk/web.png" | absolute_url }}" alt="" /></span>
 Not only was this a difficult project to finish in 4 months, the time crunch got even smaller as we also needed to implement *servers* where each server had 2 players playing a normal / extensive form game and have it be submitted to Amazon Mechanical Turk directly. This also meant that our databases had to sync with one another at all times, which made optimizing a crucial factor.
@@ -43,6 +45,7 @@ To make matters worse, our team consisted of 6 members in which many did not con
 </div>
 <p><span class="image right"><img src="{{ "/images//mturk/completed.png" | absolute_url }}" alt="" /></span>When completed, Admins can then approve / reject submitted assignments, or even pay bonuses to workers in bulk through a pop-up (specifically, using checkboxes on the left-hand side). For better security, we also designed our system so that it wouldn't allow Admins to pay bonuses to non-approved assignments or ones already paid. All in all, our user-friendly interface was designed using <strong>HTML / CSS</strong> that allowed users to manage tasks with ease, improving overall time / efficiency.</p>
 <hr />
+
 ## References
 - <https://docs.aws.amazon.com/cli/latest/reference/mturk/index.html>
 - <https://channels.readthedocs.io/en/latest/>
