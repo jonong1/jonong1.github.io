@@ -14,15 +14,15 @@ sitemap:
 <span class="image right"><img src="{{ "/images/baby.png" | absolute_url }}" alt="" /></span>
 Hey there! My name is Jon, and I am finishing up my major in Computing Science with a minor in Psychology (SC) at the University of Alberta. As of recently, I've been intrigued on the concept of Web Development / Design and even back in highschool, I was truly interested on how web applications and sites were being made. 
 
-To the right is a photo of myself when I was young, don't even ask what I'm holding - I really don't know.
+On a side note, I am also interested in UX / UI Design as I could quite literally spend hours and hours trying to find the best fit whenever I am customizing just about anything. 
 <hr />
 
 ## Hobbies
 To get to know me better, below are just a few hobbies I personally enjoy.
 
 ### Ricing Desktops
-<p><span class="image left"><img src="{{ "/images/hobbies/rice_1.png" | absolute_url }}" alt="" /></span>Ricing or R.I.C.E. is a term that originates from the car enthusiast community, which stands for Race Inspired Cosmetic Enhancements (usually also refers to cars from Japan). Essentially, people would make modifications to their cars, mainly in terms of looks, but wouldn't actually enhance any performance; make them appear faster when it's not. For example, people would put stickers to make their cars look all flashy, but with engines obviously untouched.</p>
-<p><span class="image right"><img src="{{ "/images/hobbies/rice_2.png" | absolute_url }}" alt="" /></span>In the context of Desktops and <a href="https://www.reddit.com/r/unixporn/">r/unixporn</a>, it refers to customizing one's desktop using visual improvements, such as icons, apps, or really the entire system. It became a staple in the reddit community where people posted their visually attractive desktops, upgraded beyond the default design. I personally have customized my desktop back in highschool to my liking, as well as recently in 2020 on my Mac (shown in the 2 images).</p>
+<p><span class="image left"><img src="{{ "/images/hobbies/rice_1.png" | absolute_url }}" alt="" /></span>Ricing or R.I.C.E. is a term that originates from the car enthusiast community, which stands for Race Inspired Cosmetic Enhancements (usually also refers to cars from Japan). Essentially, people would make modifications to their cars, mainly in terms of looks, but wouldn't actually enhance any performance; make them appear faster when it's not.</p>
+<p><span class="image right"><img src="{{ "/images/hobbies/rice_2.png" | absolute_url }}" alt="" /></span>In the context of Desktops and <a href="https://www.reddit.com/r/unixporn/">r/unixporn</a>, it refers to customizing one's desktop using visual improvements, such as icons, apps, or really the entire system. It became a staple in the reddit community where people posted their visually attractive desktops, upgraded beyond the default design. I personally have customized my own back in highschool to my liking, as well as recently in 2020 on my Mac (shown in the 2 images).</p>
 
 ### Keeb
 <span class="image right"><img src="{{ "/images/hobbies/keeb.jpg" | absolute_url }}" alt="" /></span>
@@ -42,9 +42,9 @@ Keeb is another term for keyboard, primarily used in the mechanical keyboard com
 ### TV Shows
 <div class="box alt">
 	<div class="row 50% uniform">
-		<div class="4u"><span class="image fit"><a href="https://www.imdb.com/title/tt0944947/" class="image main"><img src="{{ "/images/hobbies/got.png" | absolute_url }}" alt="" /><figcaption class="caption" style="text-align:center; display:table; max-width:60%; margin: 10px auto;"><sup>Game of Thrones</sup></figcaption></a></span></div>
-		<div class="4u"><span class="image fit"><a href="https://www.imdb.com/title/tt4158110/" class="image main"><img src="{{ "/images/hobbies/robot.jpg" | absolute_url }}" alt="" /><figcaption class="caption" style="text-align:center; display:table; max-width:60%; margin: 10px auto;"><sup>Mr. Robot</sup></figcaption></a></span></div>
-		<div class="4u$"><span class="image fit"><a href="https://www.imdb.com/title/tt0475784/" class="image main"><img src="{{ "/images/hobbies/ww.jpg" | absolute_url }}" alt="" /><figcaption class="caption" style="text-align:center; display:table; max-width:60%; margin: 10px auto;"><sup>Westworld</sup></figcaption></a></span></div>
+		<div class="4u"><span class="image fit"><a href="https://www.imdb.com/title/tt0944947/" class="image main"><img src="{{ "/images/hobbies/got.png" | absolute_url }}" alt="" /><figcaption class="caption" style="text-align:center; display:table; max-width:60%; margin: 10px auto;"><sup><i>Game of Thrones</i></sup></figcaption></a></span></div>
+		<div class="4u"><span class="image fit"><a href="https://www.imdb.com/title/tt4158110/" class="image main"><img src="{{ "/images/hobbies/robot.jpg" | absolute_url }}" alt="" /><figcaption class="caption" style="text-align:center; display:table; max-width:60%; margin: 10px auto;"><sup><i>Mr. Robot</i></sup></figcaption></a></span></div>
+		<div class="4u$"><span class="image fit"><a href="https://www.imdb.com/title/tt0475784/" class="image main"><img src="{{ "/images/hobbies/ww.jpg" | absolute_url }}" alt="" /><figcaption class="caption" style="text-align:center; display:table; max-width:60%; margin: 10px auto;"><sup><i>Westworld</i></sup></figcaption></a></span></div>
 	</div>
 </div>
 
