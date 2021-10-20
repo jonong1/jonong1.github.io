@@ -11,10 +11,10 @@ sitemap:
 	<h1>About Me</h1>
 	<p>"I could either watch it happen or be a part of it." -Elon Musk</p>
 </header>
-<span class="image right"><img src="{{ "/images/baby.jpg" | absolute_url }}" alt="" /></span>
-My name is Jon, and I am finishing up my major in Computing Science with a minor in Psychology (SC) at the University of Alberta. As of recently, I've been intrigued on the concept of Web Development / Design and even back in highschool, I was truly interested on how web applications and sites were being made. 
+<span class="image right"><img src="{{ "/images/baby.png" | absolute_url }}" alt="" /></span>
+Hey there! My name is Jon, and I am finishing up my major in Computing Science with a minor in Psychology (SC) at the University of Alberta. As of recently, I've been intrigued on the concept of Web Development / Design and even back in highschool, I was truly interested on how web applications and sites were being made. 
 
-To my right is a photo of myself when I was young, don't even ask what I'm holding - I really don't know.
+To the right is a photo of myself when I was young, don't even ask what I'm holding - I really don't know.
 <hr />
 
 ## Hobbies
@@ -50,6 +50,8 @@ Keeb is another term for keyboard, primarily used in the mechanical keyboard com
 
 ### Games
 Games have always been a big part of my life, all the way back to my childhood. In summation, here's a list of a few games that stood out over my *many* years of playing.
+
+<span class="image left"><img src="{{ "/images/hobbies/gaming.jpg" | absolute_url }}" alt="" /></span>
 <dl>
 	<dt>Single-Player Games</dt>
 	<dd>
@@ -72,8 +74,10 @@ Games have always been a big part of my life, all the way back to my childhood. 
 ### Badminton
 
 #### Achievements
+
 <dl>
 	<dt>2015</dt>
+	<span class="image right"><img src="{{ "/images/hobbies/baddy.jpg" | absolute_url }}" alt="" /></span>
 	<dd>
 		<li>1st in Men's Doubles (ASAA Cities)</li>
 		<li>2nd in Men's Doubles (ASAA Provincials)</li>
