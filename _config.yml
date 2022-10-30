@@ -1,54 +1,54 @@
 # Site
-title:              Jonathan Ong
-bio:                ''
-description:        ""
-locale:             en_CA
+title: Jonathan Ong
+bio: ""
+description: ""
+locale: en_CA
 baseurl: "" # the subpath of your site, e.g. /project
 url: "https://jonong1.github.io" # the base hostname & protocol for your site
 
 # Comments
-disqus_shortname:   default
+disqus_shortname: default
 
 # Social
-analytics-id:       "default"
-facebook:           "jonathan.ong.3386"
-instagram:          "_j.ong"
-spotify:            "31bkfe574vb3cahojtr2piu3k2rq"
-github:             "jonong1"
+analytics-id: "default"
+facebook: "jonathan.ong.3386"
+instagram: "_j.ong"
+spotify: "31bkfe574vb3cahojtr2piu3k2rq"
+github: "jonong1"
 
 # personal
-location:           Calgary, AB
-phone:              403-889-7087
-email:              ong.jzh@gmail.com # change this to your email to receive free emails for your contact submissions via Slapform.com
+location: Toronto, ON
+phone: 403-889-7087
+email: ong.jzh@gmail.com # change this to your email to receive free emails for your contact submissions via Slapform.com
 
 # Other
-background_image:   /images/bg.jpg
+background_image: /images/bg.jpg
 # Tip: The color palette and other styles can be configured in /_sass/lib/_vars.scss
 slapform_thankyou_page: /thank-you
 
 defaults:
-- scope:
-    path: ''
-    type: posts
-  values:
-    permalink: "/project/:title/"
-    layout: post
-    author:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      permalink: "/project/:title/"
+      layout: post
+      author:
 
 # Jekyll
-permalink:          /project/:title/
-markdown:           kramdown
-highlighter:        rouge
+permalink: /project/:title/
+markdown: kramdown
+highlighter: rouge
 kramdown:
-  auto_ids:         true
-  footnote_nr:      1
-  entity_output:    as_char
-  toc_levels:       1..6
-  enable_coderay:   false
-mathjax:            true
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
+mathjax: true
 sass:
-  sass_dir:         _sass
-  style:            compressed
+  sass_dir: _sass
+  style: compressed
 
 # Gems
 gems:
@@ -63,7 +63,22 @@ paginate: 6
 paginate_path: "/project/page:num/"
 
 jekyll-mentions:
-    base_url: https://github.com
+  base_url: https://github.com
 
 # Exclude list
-exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile, old]
+exclude:
+  [
+    README.md,
+    Gemfile,
+    Gemfile.lock,
+    node_modules,
+    gulpfile.js,
+    package.json,
+    _site,
+    src,
+    vendor,
+    CNAME,
+    LICENSE,
+    Rakefile,
+    old,
+  ]
