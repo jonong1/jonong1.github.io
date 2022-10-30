@@ -43,7 +43,8 @@ Keeb is another term for keyboard, primarily used in the mechanical keyboard com
     	<li><strong>Plate</strong>: FR4</li>
     	<li><strong>PCB</strong>: DZ60RGB-WKL</li>
 		<li><strong>Weight</strong>: Brass</li>
-    	<li><strong>Keycaps</strong>: ePBT 9009 / ePBT Origami + Gen.S Prism Resin Artisan</li>
+    	<li><strong>Keycaps</strong>: ePBT 9009 / ePBT Origami</li>
+		<li><strong>Artisan</strong>: Gen.S Prism Resin</li>
     	<li><strong>Switches</strong>: Alpacas Linear (Lubed & Filmed)</li>
     	<li><strong>Stabilizers</strong>: Durock V2</li>
     </dd>
