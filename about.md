@@ -30,7 +30,7 @@ To get to know me better, below are just a few hobbies I personally enjoy.
 
 ### Keeb
 
-<p><span class="image right"><img src="{{ "/images/hobbies/keeb2.jpg" | absolute_url }}" alt="" style="width:477px;height:268px;" /></span>
+<p><span class="image right"><img src="{{ "/images/hobbies/keeb2.jpg" | absolute_url }}" alt="" style="width:477px;height:278px;" /></span>
 Keeb is another term for keyboard, primarily used in the mechanical keyboard community. Most of the time, I'm usually always on my computer and one of the things I do is type a lot - whether that is gaming, coding, or even just surfing the web. Due to this, I also type relatively fast (Highest: 158 wpm) and so I asked myself, why not just build my own?
 </p>
 
@@ -39,11 +39,12 @@ Keeb is another term for keyboard, primarily used in the mechanical keyboard com
 <dl>
 	<dt>Main Keeb</dt>
     <dd>
-    	<li><strong>Case</strong>: D60 WKL E-White/Black (Gasket Mount)</li>
+    	<li><strong>Case</strong>: D60 WKL E-White/Black</li>
+		<li><strong>Mount</strong>: Gasket</li>
     	<li><strong>Plate</strong>: FR4</li>
     	<li><strong>PCB</strong>: DZ60RGB-WKL</li>
     	<li><strong>Keycaps</strong>: EPBT 9009 + Gen.S Prism Resin Artisan</li>
-    	<li><strong>Switches</strong>: Alpacas Linear (Lubed and Filmed)</li>
+    	<li><strong>Switches</strong>: Alpacas Linear (Lubed & Filmed)</li>
     	<li><strong>Stabilizers</strong>: Durock V2</li>
     </dd>
 
