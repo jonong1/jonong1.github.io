@@ -13,7 +13,7 @@ sitemap:
 	<p>"I could either watch it happen or be a part of it." -Elon Musk</p>
 </header>
 <span class="image right"><img src="{{ "/images/baby.png" | absolute_url }}" alt="" /></span>
-Hey there! My name is Jon, and I am finishing up my major in Computing Science with a minor in Psychology (SC) at the University of Alberta. As of recently, I've been intrigued on the concept of Web Development / Design and even back in highschool, I was truly interested on how web applications and sites were being made.
+Hey there! My name is Jon, and I have a major in Computing Science with a minor in Psychology (SC) at the University of Alberta. As of recently, I've been intrigued on the concept of Web Development / Design and even back in highschool, I was truly interested on how web applications and sites were being made.
 
 On a side note, I am also interested in UX / UI Design as I could quite literally spend hours and hours trying to find the best fit whenever I am customizing just about anything.
 
@@ -38,7 +38,7 @@ Keeb is another term for keyboard, primarily used in the mechanical keyboard com
 <dl>
 	<dt>Main Keeb</dt>
     <dd>
-    	<li><strong>Case</strong>: D60 WKL E-White/Black Aluminum</li>
+    	<li><strong>Case</strong>: D60 WKL E-White/Black</li>
 		<li><strong>Structure</strong>: Gasket Mount</li>
     	<li><strong>Plate</strong>: FR4</li>
     	<li><strong>PCB</strong>: DZ60RGB-WKL</li>
